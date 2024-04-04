@@ -1,0 +1,13 @@
+<h4>Azure Communication Services</h4>
+    <h1>Teams meeting join quickstart</h1>
+    <input id="teams-link-input" type="text" placeholder="Teams meeting link" [(ngModel)]="meetingLinkInput" style="margin-bottom:1em; width: 300px;" />
+    <p>Call state <span style="font-weight: bold" id="call-state">{{callStateElement}}</span></p>
+    <p><span style="font-weight: bold" id="recording-state">{{recordingStateElement}}</span></p>
+    <div>
+        <button id="join-meeting-button" type="button" (click)="teamsMeetingJoinButton()" [disabled]="teamsMeetingJoinButtonDisabled">
+            Join Teams Meeting
+        </button>
+        <button id="hang-up-button" type="button" (click)="hangUpButton()" [disabled]="hangUpButtonDisabled">
+            Hang Up
+        </button>
+    </div>
